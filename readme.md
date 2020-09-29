@@ -4,7 +4,7 @@ Comes with 69 pre-loaded compliments! :clap:
 
 ## Setup
 
-* Clone the repository and rename `config.json.example` to `config.json`.
+* Clone or download the repository and rename `config.json.example` to `config.json`.
 * Open `config.json` in your favorite text editor and edit to your liking.
 * Run the bot by opening a terminal (for windows it's called command prompt), navigate to the bot's directory using the `cd` command 
 	* If you don't know how to use the `cd` command please follow this guide.
