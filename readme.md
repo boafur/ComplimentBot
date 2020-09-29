@@ -1,6 +1,6 @@
 # Compliment Bot
 
-Comes with 69 pre-loaded compliments!
+Comes with 69 pre-loaded compliments! :clap:
 
 ## Setup
 
