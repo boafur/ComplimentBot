@@ -1,4 +1,4 @@
-# This script will output all items in a text file in list format
+# This script will output all items in a text file in list format separated by a new line.
 # Please create a file called `compliments.txt` and then put each compliment on a new line.
 f = open("compliments.txt", "r")
 
