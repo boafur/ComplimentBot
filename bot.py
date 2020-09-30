@@ -8,7 +8,7 @@ with open("config.json") as f:
     token = data["token"]
     prefix = data["prefix"]
 activity = discord.Activity(
-    name=".help", type=discord.ActivityType.watching
+    name=prefix + "help", type=discord.ActivityType.watching
 )  # Activity
 embed_color = discord.Color(0x38C25D)
 

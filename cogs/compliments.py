@@ -74,14 +74,31 @@ compliments = [
     "Thank you for being you.",
 ]
 
+async def delmsg(ctx):
+    if isinstance(ctx.channel, discord.DMChannel):
+        return False
+    else:
+        try:
+            await ctx.message.delete()
+            return True
+        except discord.Forbidden:
+            return False
 
 class Compliments(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command(description="Send a random compliment")
-    async def compliment(self, ctx):
-        await ctx.send(random.choice(compliments))
+    async def compliment(self, ctx, user: discord.Member = None):
+        await ctx.trigger_typing()
+        author = ctx.author
+        choice = random.choice(compliments)
+        msg = await ctx.send(f"{choice}")
+        if user is None:
+            a = ctx.author
+        else:
+            a = user
+        await msg.edit(content=f"{a.mention}, {choice}")
 
 
 def setup(bot):
