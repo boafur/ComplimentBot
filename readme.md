@@ -18,6 +18,6 @@ This section will tell you how to properly run the bot.
 	* If you don't know how to use the `cd` command please follow [this guide](https://www.howtoforge.com/linux-cd-command/), for windows please follow [this guide instead](https://www.minitool.com/news/how-to-change-directory-in-cmd.html).
 * Once you have navigated to the bot's directory you can start the bot by running `python3 -m pip install -r requirements.txt` then `python3 bot.py`
 
-I'll make a step by step tutorial on how to add your own compliments at a later date. If you know python or know how to edit lists, the compliments are located in `cogs/compliments.py`, by all means add your own or customize this bot however you want!
+I'll make a step by step tutorial on how to add your own compliments at a later date. If you know python or know how to edit lists, the compliments are located in `cogs/compliments.py`, by all means add your own or customize this bot however you want! I have included a script to convert a file full of compliments into a list so you can easily just copy and paste.
 
 Happy complimenting! :sparkles:

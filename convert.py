@@ -1,6 +1,9 @@
-with open("compliments.txt", "r") as f:
-    file = f.read()
+# This script will output all items in a text file in list format
+# Please create a file called `compliments.txt` and then put each compliment on a new line.
+f = open("compliments.txt", "r")
 
-lines = file.split("\n")
+output = [line.rstrip('\n') for line in f]
 
-print(lines)
+f.close()
+
+print(output)
